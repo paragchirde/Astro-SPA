@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Astro SPA - Earth">
+  <main class="text-center">
+    <h1>Welcome to <span class="text-gradient">Mars</span></h1>
+    <p>
+      Here's a poem written by <span class="text-gradient font-medium"
+        >Chat GPT</span
+      > for Mars.
+    </p>
+    <div class="instructions flex flex-col space-y-4">
+      <p>
+        In the darkness of space, so far and wide, <br>
+There's a planet that beckons with crimson pride, <br>
+Its name is Mars, the Red Planet we know, <br>
+A world of wonder, with secrets to show.
+      </p>
+      <p>
+        Its rugged terrain, with canyons and peaks, <br>
+        A landscape so alien, our imagination it seeks, <br>
+        With dust storms that rage for weeks on end, <br>
+        A planet so different, a world to transcend.
+      </p>
+      <p>
+        But beneath its rusty surface, lies a tale, <br>
+        Of a planet once alive, with oceans that sailed, <br>
+        A world that had water, and maybe some life, <br>
+        The secrets of Mars, just waiting for our strife.
+      </p>
+      <p>
+        And so we explore, with rovers and probes, <br>
+        To unravel the mysteries, and find out what's known, <br>
+        To study the rocks, and the Martian air,<br>
+        To learn of the past, and what may lie there.
+      </p>
+      <p>
+        Maybe one day, we'll set foot on its soil, <br>
+        And walk on a planet that once made us recoil, <br>
+        But until that day, we'll continue to dream, <br>
+        Of the Red Planet, and all it may mean.
+      </p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>

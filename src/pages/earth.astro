@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Astro SPA - Earth">
+  <main class="text-center">
+    <h1>Welcome to <span class="text-gradient">Earth</span></h1>
+    <p>
+      Here's a poem written by <span class="text-gradient font-medium"
+        >Chat GPT</span
+      > for Earth.
+    </p>
+    <div class="instructions flex flex-col space-y-4">
+      <p>
+        Planet Earth, our home so dear, <br />
+        A place of wonder, year after year, <br />
+        With oceans vast and mountains high, <br />
+        And endless beauty under the sky. <br />
+      </p>
+      <p>
+        From the Arctic tundra to the Amazon rain, <br />
+        Every corner of Earth, a unique terrain, <br />
+        With creatures big and creatures small, <br />
+        Each one important, each one a thrall.
+      </p>
+      <p>
+        But we humans, oh so wise, <br />
+        Have caused the Earth so many cries, <br />
+        Pollution, deforestation, and climate change, <br />
+        The consequences of our selfish range.
+      </p>
+      <p>
+        Yet there's hope, if we unite, <br />
+        And strive to make our future bright, <br />
+        Reduce our carbon footprint, plant more trees, <br />
+        And keep our oceans clean and free.
+      </p>
+      <p>
+        Let's cherish this planet we call our home, <br />
+        For future generations to freely roam, <br />
+        A world of wonder, a world of life, <br />
+        Let's save it from our careless strife.
+      </p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>
